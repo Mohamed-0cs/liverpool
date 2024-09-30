@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+.RedSection {
+  position: relative;
+  top: 0;
+  background-color: red;
+  width: 100%;
+}
+.navbar {
+  background-color: red;
+  justify-content: space-between;
+  width: 90%;
+  height: 50px;
+  margin-left: 5%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.nav-logo {
+  width: 20%;
+  margin-left: 2%;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  margin-right: 9px;
+  justify-content: space-evenly;
+}
+.navbar a {
+  color: white;
+  height: 25px;
+  font-weight: bold;
+}
+.nav-links li {
+  margin-left: 20px;
+}
+.navbar-toggler {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+/* Toggle button for mobile  i am not understanding it  */
+.navbar-toggler {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+/* for navbar */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    background-color: white;
+    /* left: 0; */
+  }
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .nav-links li a {
+    color: black;
+  }
+}
+
+@media (min-width:901px)  {
+  .nav-links {
+    font-size: 12px;
+    
+  }
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 2px;
+    text-align: center;
+  }
+  .nav-links li a {
+    color: white;
+  }
+}
+
+/* @media (max-width:px)  {
+  .nav-links {
+    font-size: 19px;
+    
+  }
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 2px;
+    text-align: center;
+  }
+  .nav-links li a {
+    color: white;
+  }
+} */
+
+.Virtical-Line {
+  background-color: rgb(219, 175, 175);
+  width: 2px;
+  height: 20px;
+}
+
+.AfterNavbar {
+  padding-top: 100px;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.headLins {
+  padding: 4px;
+  text-align: center;
+  background-color: rgb(179, 58, 58);
+  border-radius: 15px;
+  margin-left: 80px;
+}
+
+.allNews {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.cards {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.card {
+  width: 28%;
+  height: 45%;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.card img {
+  width: 100%;
+  height: 300px;
+}
+.cards h5 {
+  padding-top: 70px;
+}
+.cards p {
+  padding-top: 10px;
+}
+.horizontal-Line {
+  background-color: white;
+  width: 80%;
+  height: 1px;
+  margin-top: 10px;
+}
+
+/* for cards */
+@media (max-width: 480px) {
+  .RedSection {
+    width: 100%;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 839px) {
+  .RedSection {
+    width: 100%;
+  }
+  .card {
+    width: 50%;
+  }
+}
+
+.AfterRedSection {
+  margin-top: 10px;
+
+  padding: 20px;
+}
+
+.LFC-RETAIL {
+  margin-left: 60px;
+  width: 100px;
+  height: 25px;
+  padding: 2px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.up-cards {
+  display: flex;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+.up-cards a {
+  margin-left: 40px;
+  color: rgb(116, 112, 112);
+}
+
+.up-cards a:hover {
+  color: black;
+  font-size: bold;
+}
+.SecondCards {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.cards-collection {
+  background-color: white;
+  width: 19%;
+  margin-left: 1px;
+  height: 500px;
+  margin-bottom: 5px;
+}
+.button-under-cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.btn-under-collection {
+  border: 0;
+  background-color: rgb(228, 228, 13);
+  height: 60px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.cards-collection img {
+  width: 100%;
+  height: 70%;
+}
+.cards-collection h5 {
+  font-size: x-large;
+  margin-left: 5%;
+}
+.cards-collection p {
+  margin-left: 5%;
+}
+.cards-collection button {
+  margin-left: 5%;
+  width: 90%;
+  height: 10%;
+  background-color: black;
+  color: white;
+}
+
+.after-yellow-button {
+  padding-top: 5px;
+}
+.first-section {
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.first-section button {
+  margin-left: 260px;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+  border: 0;
+  background-color: black;
+  color: white;
+  font-size: bold;
+}
+
+.big-pic-and-small-cards {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.big-pic img {
+  width: 800px;
+  height: 85%;
+}
+.big-pic p {
+  font-size: x-large;
+  padding: 2%;
+}
+.small-cards-beside-big-pic {
+  padding: 1%;
+  flex-direction: column;
+
+  width: 30%;
+  height: 90%;
+}
+.small-cards-beside-big-pic img {
+  width: 80%;
+}
+.small-cards-beside-big-pic div {
+  margin-bottom: 1%;
+}
+.small-cards-beside-big-pic .horizontal-Line {
+  background-color: rgb(216, 210, 210);
+}
+.woman-partition {
+  background-color: red;
+  height: 590px;
+}
+.woman h5,
+.after-woman-partition h5 {
+  background-color: rgb(142, 67, 67);
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  align-content: center;
+  border-radius: 20px;
+  margin-left: 5%;
+}
+.woman a {
+  margin-right: 5%;
+  cursor: pointer;
+}
+.woman a:hover {
+  color: rgb(109, 107, 107);
+}
+
+.card-h-line {
+  background-color: rgb(193, 187, 187);
+  width: 80%;
+  height: 1px;
+  margin-top: 10px;
+}
+
+.after-woman-partition {
+  margin: 20px;
+  padding-top: 30px;
+  background-color: white;
+  height: auto;
+}
+.after-woman-partition h5 {
+  margin-top: 50px;
+  background-color: rgb(15, 14, 14);
+  width: 180px;
+  height: 30px;
+  text-align: center;
+  align-content: center;
+  border-radius: 20px;
+  margin-left: 5%;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+.threeCards {
+  margin: 50px;
+  display: flex;
+  height: 600px;
+  justify-content: space-around;
+}
+
+.borderCard {
+  background-color: rgb(249, 249, 249);
+  border: solid 1px rgb(196, 185, 185);
+  padding: 10px;
+  margin: 10px;
+  width: calc(100% / 3);
+  height: 550px;
+}
+
+.header-inCard {
+  display: flex;
+  justify-content: space-between;
+}
+.header-inCard h3 {
+  margin-top: 20px;
+  color: rgb(110, 102, 102);
+  font-size: medium;
+}
+.header-inCard img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.cardDetails {
+  padding: 0px 10px 15px 0px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  border-style: solid;
+  border-color: rgb(196, 185, 185);
+  border-width: 0px 1px 1px 0px;
+}
+.cardDetails h4 {
+  font-weight: 100;
+}
+.cardDetails h6 {
+  font-size: large;
+  font-weight: 500;
+}
+
+.links-in-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.links-in-footer a {
+  color: black;
+  margin-left: 20px;
+  font-weight: bold;
+  font-weight: 500;
+}
+.links-in-footer a:hover {
+  color: rgb(192, 179, 179);
+}
+
+.the-first-part-in-footer {
+  background-color: rgb(231, 16, 16);
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+}
+.the-first-part-in-footer img {
+  width: 150px;
+  height: 190px;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+.the-second-part-in-footer {
+  background-color: rgb(194, 42, 42);
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+}
+
+.the-second-part-in-footer img {
+  cursor: pointer;
+}
+
+.the-3-part-in-footer {
+  background-color: rgb(145, 26, 26);
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.the-left-side-in3rdFooter {
+  display: flex;
+  margin: 20px;
+}
+.the-left-side-in3rdFooter a {
+  color: white;
+  display: block;
+  padding: 5px;
+}
+.contactUs-the-left-side-in3rdFooter {
+  margin-left: 25px;
+}
+
+.social-media {
+  margin: 30px;
+}
+.social-media i {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  font-size: x-large;
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2px;
+}
+
+.final-in-footer {
+  background-color: rgb(145, 26, 26);
+  height: 80px;
+}
+
+.appstore {
+  display: flex;
+}
+.appstore img {
+  width: 150px;
+}
+.line {
+  height: 1px;
+  width: 90%;
+  background-color: rgb(168, 154, 154);
+  margin-left: 5%;
+  margin-bottom: 30px;
+}
+.copyright {
+  color: rgb(214, 201, 201);
+  font-size: 13px;
+  text-align: center;
+}
