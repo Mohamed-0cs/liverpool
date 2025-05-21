@@ -43,14 +43,6 @@
 .nav-links li {
   margin-left: 20px;
 }
-.navbar-toggler {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-}
 
 .navbar-toggler {
   display: none;
